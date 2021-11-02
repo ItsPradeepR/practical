@@ -1,9 +1,9 @@
 var config = {
     deps: [
-        "js/cstm-script"
+        "Magento_Theme/js/cstm-script"
       ],
     paths: {            
-            'slick': "js/slick.min"
+            'slick': "Magento_Theme/js/slick.min"
             
         },   
     shim: {

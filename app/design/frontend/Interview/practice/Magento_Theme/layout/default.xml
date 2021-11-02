@@ -6,6 +6,9 @@
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+    <!-- common for theme -->  
+</head>
     <body>
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
@@ -17,8 +20,7 @@
         <referenceContainer name="footer">
             <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="Magento_Store::switch/stores.phtml"/>
         </referenceContainer>
-        <referenceBlock name="report.bugs" remove="true"/>
-        
+        <referenceBlock name="report.bugs" remove="true"/>        
         <!-- move right of container -->
         <move element="logo" destination="header-wrapper" after="-" /> 
         <move element="top.search" destination="header-wrapper" before="-" />

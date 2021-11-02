@@ -11,11 +11,8 @@
 //  Otherwise this theme won't be available for parent nesting
 //  All new variables should be placed in local theme lib or local theme files
 
-//  Footer
-//  ---------------------------------------------
-
+// Footer
 @copyright__background-color: @color-gray-middle4;
-
 
 // Mixins
 .border-radius(@val) {
@@ -23,13 +20,15 @@
 	-moz-border-radius: @val;
 	border-radius: @val;
 }
+
+
  
-& when (@media-common = true) {
+ & when (@media-common = true) {
     .product-item {
         .tocart {
-            .border-radius(8px);
+            .border-radius(4px);
             background: @color-dark-green1;
-            border:1px solid @color-dark-green1;
+            border: 1px solid  @color-dark-green1;
         }
     }
 }
